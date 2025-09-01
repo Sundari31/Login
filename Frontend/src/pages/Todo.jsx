@@ -30,7 +30,7 @@ const Todo = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-yellow-100 via-green-50 to-blue-100">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 via-teal-50 to-green-100">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Todo = () => {
             onClick={handleLogout}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-3 py-1 bg-emerald-200 text-black rounded-lg hover:bg-emerald-300 transition shadow-md text-sm"
+            className="px-3 py-1 bg-blue-400 text-white font-semibold rounded-xl hover:bg-blue-500 transition shadow-md"
           >
             Logout
           </motion.button>
@@ -62,7 +62,7 @@ const Todo = () => {
             onClick={handleAdd}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="ml-2 px-4 py-3 bg-emerald-200 backdrop-blur-lg text-black rounded-xl hover:bg-emerald-300 transition shadow-lg"
+            className="ml-2 px-4 py-3 bg-blue-400 text-white font-semibold rounded-xl hover:bg-blue-500 transition shadow-md"
           >
             Add
           </motion.button>
@@ -82,7 +82,7 @@ const Todo = () => {
               </span>
               <button
                 onClick={() => handleDelete(i)}
-                className="text-red-300 hover:text-red-500 transition"
+                className="text-red-500 hover:text-red-300 transition"
               >
                 ✖
               </button>

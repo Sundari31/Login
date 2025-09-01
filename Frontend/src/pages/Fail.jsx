@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Fail = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-red-100 via-pink-50 to-orange-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 via-teal-50 to-green-100">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,14 +18,14 @@ const Fail = () => {
 
         <Link
           to="/signup"
-          className="block w-full mb-4 bg-red-400 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-lg"
+          className="block w-full mb-4 bg-red-500 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-400 transition shadow-lg"
         >
           Register Here
         </Link>
 
         <Link
           to="/"
-          className="block w-full bg-red-400 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-md"
+          className="block w-full bg-red-500 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-400 transition shadow-md"
         >
           Try Again
         </Link>

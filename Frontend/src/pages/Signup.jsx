@@ -20,7 +20,7 @@ const Signup = () => {
   }
 
   return (
-  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100">
+  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 via-teal-50 to-green-100">
   <motion.div
     initial={{ opacity: 0, y: 40 }}
     animate={{ opacity: 1, y: 0 }}
@@ -32,21 +32,21 @@ const Signup = () => {
   onChange={handleUser}
   type="text"
   placeholder="Username"
-  className="w-full mb-4 px-4 py-3 bg-white/20 text-black placeholder-gray-400 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+  className="w-full mb-4 px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
 />
 
 <input
   onChange={handlePass}
   type="password"
   placeholder="Password"
-  className="w-full mb-6 px-4 py-3 bg-white/20 text-black placeholder-gray-400 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+  className="w-full mb-6 px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
 />
 
 <motion.button
   onClick={handleSignup}
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
-  className="w-full bg-pink-400 backdrop-blur-lg text-black font-semibold py-3 rounded-xl hover:bg-pink-600 transition shadow-lg"
+  className="w-full bg-blue-400 text-white font-semibold py-3 rounded-xl hover:bg-blue-500 transition shadow-md"
 >
   Sign Up
 </motion.button>
