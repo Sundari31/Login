@@ -3,7 +3,7 @@ const cors = require("cors")
 const app = express()
 
 app.use(cors({
-    origin: "https://login-azure-ten.vercel.app/",  
+    origin: "https://login-azure-ten.vercel.app",  
     methods: ["GET", "POST"],
     credentials: true
 }))

@@ -12,7 +12,7 @@ const Signup = () => {
   function handlePass(evt) { setPass(evt.target.value) }
 
   function handleSignup() {
-    axios.post("http://localhost:3000/signup", { username: user, password: pass })
+    axios.post("https://login-2-vio4.onrender.com/signup", { username: user, password: pass })
       .then(() => {
         alert("Register successfully! Please login.")
         navigate("/")

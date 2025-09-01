@@ -13,7 +13,7 @@ const Login = () => {
   function handlePass(evt) { setPass(evt.target.value) }
 
   function handleCheck() {
-    axios.post("http://localhost:3000/login", { username: user, password: pass })
+    axios.post("https://login-2-vio4.onrender.com/login", { username: user, password: pass })
       .then((data) => {
         if (data.data === true) {
           navigate("/success")
