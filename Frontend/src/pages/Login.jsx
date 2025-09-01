@@ -38,6 +38,7 @@ const Login = () => {
       type="text"
       placeholder="Username"
       className="w-full mb-4 px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+      required
     />
 
     <input
@@ -45,6 +46,7 @@ const Login = () => {
       type="password"
       placeholder="Password"
       className="w-full mb-6 px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+      required
     />
 
     <motion.button
