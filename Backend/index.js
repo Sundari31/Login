@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 let users = [
-    { username: "suu", password: "2468" } 
+    { username: "Sundari", password: "2468" } 
 ]
 
 app.get("/", (req, res) => {
@@ -54,4 +54,4 @@ app.post("/signup", function(req, res) {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`✅ Server running on port ${PORT}`);
-});
+})

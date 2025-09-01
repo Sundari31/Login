@@ -26,7 +26,7 @@ const Todo = () => {
   }
 
   const handleLogout = () => {
-    navigate("/") // go back to login page
+    navigate("/") 
   }
 
   return (
@@ -37,7 +37,7 @@ const Todo = () => {
         transition={{ duration: 0.6 }}
         className="w-[400px] p-8 bg-white/30 backdrop-blur-lg border border-white/40 rounded-3xl shadow-2xl"
       >
-        {/* Header with Logout */}
+
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-white">📝 My To-Do List</h2>
           <motion.button
@@ -50,14 +50,13 @@ const Todo = () => {
           </motion.button>
         </div>
 
-        {/* Task Input */}
         <div className="flex mb-4">
           <input
             value={task}
             onChange={(e) => setTask(e.target.value)}
             type="text"
             placeholder="Enter a task..."
-            className="flex-1 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-400 transition"
+            className="flex-1 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
           />
           <motion.button
             onClick={handleAdd}
@@ -69,7 +68,6 @@ const Todo = () => {
           </motion.button>
         </div>
 
-        {/* Task List */}
         <ul className="space-y-3">
           {tasks.map((t, i) => (
             <li
