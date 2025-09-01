@@ -24,45 +24,44 @@ const Login = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-tr from-purple-200 via-pink-100 to-yellow-100">
-      <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="w-80 p-6 bg-white border border-gray-300 rounded-2xl shadow-xl text-center"
-      >
-        <h2 className="text-2xl font-semibold mb-6 text-purple-700">Welcome Back !</h2>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 via-pink-400 to-yellow-300">
+  <motion.div
+    initial={{ opacity: 0, y: -40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="w-96 p-8 bg-white/30 backdrop-blur-lg border border-white/40 rounded-3xl shadow-2xl text-center"
+  >
+    <h2 className="text-3xl font-bold mb-6 text-white drop-shadow-lg">Welcome Back 👋</h2>
 
-        <input
-          onChange={handleUser}
-          type="text"
-          placeholder="Username"
-          className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
-          required
-        />
+    <input
+      onChange={handleUser}
+      type="text"
+      placeholder="Username"
+      className="w-full mb-4 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-400 transition"
+    />
 
-        <input
-          onChange={handlePass}
-          type="password"
-          placeholder="Password"
-          className="w-full mb-6 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
-          required
-        />
+    <input
+      onChange={handlePass}
+      type="password"
+      placeholder="Password"
+      className="w-full mb-6 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-400 transition"
+    />
 
-        <motion.button
-          onClick={handleCheck}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-full bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 transition"
-        >
-          Sign In
-        </motion.button>
+    <motion.button
+      onClick={handleCheck}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="w-full bg-white/30 backdrop-blur-lg text-white font-semibold py-3 rounded-xl hover:bg-white/50 transition shadow-lg"
+    >
+      Sign In
+    </motion.button>
 
-        <p className='m-4 font-semibold text-gray-600'>
-          New User? <Link to={"/signup"} className='text-purple-500 hover:text-purple-700'> Register</Link>
-        </p>
-      </motion.div>
-    </div>
+    <p className="mt-6 text-white/90">
+      New User? <Link to={"/signup"} className="underline hover:text-yellow-200">Register</Link>
+    </p>
+  </motion.div>
+</div>
+
   )
 }
 
