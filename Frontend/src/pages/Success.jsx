@@ -19,7 +19,7 @@ const Success = () => {
     >
       Go to Home
     </motion.button>
-    <p className="mt-4 text-sm text-gray-500">Enjoy exploring your account 🎉</p>
+    <p className="mt-4 text-lg text-gray-500">Enjoy exploring your account 🎉</p>
   </motion.div>
 </div>
 
