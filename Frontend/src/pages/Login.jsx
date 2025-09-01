@@ -37,14 +37,14 @@ const Login = () => {
       onChange={handleUser}
       type="text"
       placeholder="Username"
-      className="w-full mb-4 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-purple-400 transition"
+      className="w-full mb-4 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-1 focus:ring-purple-400 transition"
     />
 
     <input
       onChange={handlePass}
       type="password"
       placeholder="Password"
-      className="w-full mb-6 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-purple-400 transition"
+      className="w-full mb-6 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-1 focus:ring-purple-400 transition"
     />
 
     <motion.button
