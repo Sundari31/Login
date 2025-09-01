@@ -20,7 +20,7 @@ const Signup = () => {
   }
 
   return (
-  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-400 via-purple-500 to-blue-400">
+  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100">
   <motion.div
     initial={{ opacity: 0, y: 40 }}
     animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Signup = () => {
   onClick={handleSignup}
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
-  className="w-full bg-white/30 backdrop-blur-lg text-white font-semibold py-3 rounded-xl hover:bg-white/50 transition shadow-lg"
+  className="w-full bg-pink-400 backdrop-blur-lg text-white font-semibold py-3 rounded-xl hover:bg-pink-600 transition shadow-lg"
 >
   Sign Up
 </motion.button>
