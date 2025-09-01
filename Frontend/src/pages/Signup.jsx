@@ -27,26 +27,26 @@ const Signup = () => {
     transition={{ duration: 0.6 }}
     className="w-96 p-8 bg-white/30 backdrop-blur-lg border border-white/40 rounded-3xl shadow-2xl text-center"
   >
-    <h2 className="text-3xl font-bold mb-6 text-white drop-shadow-lg">Create Account ✨</h2>
+    <h2 className="text-3xl font-bold mb-6 text-black drop-shadow-lg">Create Account ✨</h2>
     <input
   onChange={handleUser}
   type="text"
   placeholder="Username"
-  className="w-full mb-4 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+  className="w-full mb-4 px-4 py-3 bg-white/20 text-black placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
 />
 
 <input
   onChange={handlePass}
   type="password"
   placeholder="Password"
-  className="w-full mb-6 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+  className="w-full mb-6 px-4 py-3 bg-white/20 text-black placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
 />
 
 <motion.button
   onClick={handleSignup}
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
-  className="w-full bg-pink-400 backdrop-blur-lg text-white font-semibold py-3 rounded-xl hover:bg-pink-600 transition shadow-lg"
+  className="w-full bg-pink-400 backdrop-blur-lg text-black font-semibold py-3 rounded-xl hover:bg-pink-600 transition shadow-lg"
 >
   Sign Up
 </motion.button>

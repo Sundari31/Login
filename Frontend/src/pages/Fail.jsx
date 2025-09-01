@@ -12,25 +12,25 @@ const Fail = () => {
         className="bg-white/30 backdrop-blur-lg border border-white/40 rounded-3xl shadow-2xl text-center p-10 w-[400px]"
       >
         <h1 className="text-4xl font-bold text-white mb-4">❌ Login Failed!</h1>
-        <p className="text-lg text-white/90 mb-6">
+        <p className="text-lg text-black/90 mb-6">
           Your username or password is incorrect.
         </p>
 
         <Link
           to="/signup"
-          className="block w-full mb-4 bg-red-400 backdrop-blur-lg text-white font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-lg"
+          className="block w-full mb-4 bg-red-400 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-lg"
         >
           Register Here
         </Link>
 
         <Link
           to="/"
-          className="block w-full bg-red-400 backdrop-blur-lg text-white font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-md"
+          className="block w-full bg-red-400 backdrop-blur-lg text-black font-semibold px-6 py-3 rounded-xl hover:bg-red-500 transition shadow-md"
         >
           Try Again
         </Link>
 
-        <p className="mt-4 text-sm text-white/80">
+        <p className="mt-4 text-sm text-black/80">
           Please check your details and try again.
         </p>
       </motion.div>

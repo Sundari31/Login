@@ -39,12 +39,12 @@ const Todo = () => {
       >
 
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-white">📝 My To-Do List</h2>
+          <h2 className="text-2xl font-bold text-black">📝 My To-Do List</h2>
           <motion.button
             onClick={handleLogout}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-3 py-1 bg-emerald-200 text-white rounded-lg hover:bg-emerald-300 transition shadow-md text-sm"
+            className="px-3 py-1 bg-emerald-200 text-black rounded-lg hover:bg-emerald-300 transition shadow-md text-sm"
           >
             Logout
           </motion.button>
@@ -56,13 +56,13 @@ const Todo = () => {
             onChange={(e) => setTask(e.target.value)}
             type="text"
             placeholder="Enter a task..."
-            className="flex-1 px-4 py-3 bg-white/20 text-white placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
+            className="flex-1 px-4 py-3 bg-white/20 text-black placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
           />
           <motion.button
             onClick={handleAdd}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="ml-2 px-4 py-3 bg-emerald-200 backdrop-blur-lg text-white rounded-xl hover:bg-emerald-300 transition shadow-lg"
+            className="ml-2 px-4 py-3 bg-emerald-200 backdrop-blur-lg text-black rounded-xl hover:bg-emerald-300 transition shadow-lg"
           >
             Add
           </motion.button>
@@ -72,7 +72,7 @@ const Todo = () => {
           {tasks.map((t, i) => (
             <li
               key={i}
-              className="flex items-center justify-between px-4 py-3 bg-white/20 text-white border border-white/30 rounded-xl shadow-md"
+              className="flex items-center justify-between px-4 py-3 bg-white/20 text-black border border-white/30 rounded-xl shadow-md"
             >
               <span
                 onClick={() => handleToggle(i)}
