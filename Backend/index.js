@@ -2,7 +2,11 @@ const express = require("express")
 const cors = require("cors")
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin: "https://login-azure-ten.vercel.app/",  
+    methods: ["GET", "POST"],
+    credentials: true
+}))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
@@ -47,6 +51,7 @@ app.post("/signup", function(req, res) {
 
 })
 
-app.listen(3000,function(){
-    console.log("Server Started...")
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`✅ Server running on port ${PORT}`);
+});
