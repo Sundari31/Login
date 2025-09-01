@@ -56,7 +56,7 @@ const Todo = () => {
             onChange={(e) => setTask(e.target.value)}
             type="text"
             placeholder="Enter a task..."
-            className="flex-1 px-4 py-3 bg-white/20 text-black placeholder-gray-200 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
+            className="flex-1 px-4 py-3 bg-white/20 text-black placeholder-gray-400 border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-400 transition"
           />
           <motion.button
             onClick={handleAdd}

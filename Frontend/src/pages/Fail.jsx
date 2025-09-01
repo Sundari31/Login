@@ -11,7 +11,7 @@ const Fail = () => {
         transition={{ duration: 0.6 }}
         className="bg-white/30 backdrop-blur-lg border border-white/40 rounded-3xl shadow-2xl text-center p-10 w-[400px]"
       >
-        <h1 className="text-4xl font-bold text-white mb-4">❌ Login Failed!</h1>
+        <h1 className="text-4xl font-bold text-black mb-4">❌ Login Failed!</h1>
         <p className="text-lg text-black/90 mb-6">
           Your username or password is incorrect.
         </p>
