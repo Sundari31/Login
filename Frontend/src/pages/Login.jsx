@@ -16,7 +16,7 @@ const Login = () => {
     axios.post("https://login-2-vio4.onrender.com/login", { username: user, password: pass })
       .then((data) => {
         if (data.data === true) {
-          navigate("/success")
+          navigate("/todo")
         } else {
           navigate("/fail")
         }
