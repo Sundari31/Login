@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Success = () => {
   return (
-   <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tr from-green-400 via-green-500 to-yellow-300">
+   <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tr from-green-200 via-green-300 to-yellow-300">
   <motion.div
     initial={{ scale: 0.8, opacity: 0 }}
     animate={{ scale: 1, opacity: 1 }}
@@ -19,6 +19,7 @@ const Success = () => {
     >
       Go to Home
     </motion.button>
+    <p className="mt-4 text-sm text-gray-500">Enjoy exploring your account 🎉</p>
   </motion.div>
 </div>
 
